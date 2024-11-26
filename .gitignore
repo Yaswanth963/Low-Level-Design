@@ -1,0 +1,70 @@
+### IntelliJ IDEA ###
+# User-specific files
+.idea/
+
+# IntelliJ IDEA project files
+*.iws
+*.iml
+*.ipr
+
+# IntelliJ IDEA cache files
+.idea/*/workspace.xml
+.idea/*/tasks.xml
+.idea/*/dataSources/
+.idea/*/dataSources.local/
+.idea/*/deployment.xml
+.idea/*/navigation.xml
+.idea/*/shelf/
+.idea/*/libraries/
+.idea/*/module-*.xml
+.idea/*/.idea/
+
+# IntelliJ IDEA temporary files
+.idea/.idea/*/.idea
+
+# Build output
+/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Gradle ###
+# Gradle wrapper files
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Gradle build files
+build/
+# Ignore Gradle logs
+*.log
+
+# Ignore IDE-specific Gradle configuration files
+*.gradle*
+
+# Ignore the Gradle cache folder
+.gradle/
+
+# Ignore generated Gradle files
+*.h2.db
