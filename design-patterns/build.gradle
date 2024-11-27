@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.patterns'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+javadoc {
+    // Specify the destination directory for the Javadoc files
+    destinationDir = file("${buildDir}/docs/javadoc")
+    // Optional: specify the encoding used in your source files
+    options.encoding = 'UTF-8'
+    // Optional: specify additional Javadoc options
+    options.addStringOption('Xdoclint:none', '-quiet') // Disables warnings on missing Javadoc comments
+    // Enable author and version tags in the generated docs (no value needed)
+    options.addBooleanOption('author', true)
+    options.addBooleanOption('version', true)
+    // Optional: specify the title for the Javadoc documentation
+    title = 'Design Patterns Documentation'
+}
+
+task generateJavadoc(type: Javadoc) {
+    source = sourceSets.main.allJava
+    classpath = sourceSets.main.compileClasspath
+    destinationDir = file("${buildDir}/docs/javadoc")
+}
+
+dependencies {
+}
